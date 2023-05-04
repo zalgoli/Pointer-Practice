@@ -47,6 +47,7 @@ int main()
 
 	releaseArray(arr);
 
+	return 0;
 }
 
 
