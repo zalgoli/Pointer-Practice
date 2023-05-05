@@ -140,13 +140,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Array.cpp" />
+    <ClCompile Include="FindMinAndMax.cpp" />
     <ClCompile Include="Pointer Practice.cpp" />
     <ClCompile Include="Reverse_Array.cpp" />
+    <ClCompile Include="SumArrayElements.cpp" />
     <ClCompile Include="Swap.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array.h" />
+    <ClInclude Include="FindMinAndMax.h" />
     <ClInclude Include="Reverse_Array.h" />
+    <ClInclude Include="SumArrayElements.h" />
     <ClInclude Include="Swap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

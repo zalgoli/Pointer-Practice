@@ -2,6 +2,8 @@
 #include "Swap.h"
 #include "Array.h"
 #include "Reverse_Array.h"
+#include "SumArrayElements.h"
+#include "FindMinAndMax.h"
 
 int main()
 {
@@ -44,6 +46,15 @@ int main()
 	for (int i = 0; i < size; i++) {
 		std::cout << arr[i] << " ";
 	}
+	std::cout << std::endl;
+
+	std::cout << "The sum of the array elements is " << SumArrayElements(arr, size) << std::endl;
+
+	int* min = &arr[0];
+	int* max = &arr[0];
+	FindMinAndMax(arr, size, min, max);
+	
+	std::cout << "The minimum in your array is " << *min << " and the maximum is " << *max << std::endl;
 
 	releaseArray(arr);
 

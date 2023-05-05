@@ -27,6 +27,12 @@
     <ClCompile Include="Reverse_Array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SumArrayElements.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FindMinAndMax.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Swap.h">
@@ -36,6 +42,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Reverse_Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SumArrayElements.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FindMinAndMax.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
