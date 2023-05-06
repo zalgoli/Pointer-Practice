@@ -97,6 +97,9 @@ int main()
 
 	std::cout << "Finally, here is the result of multiplying these 2 matrices together: " << std::endl;
 	int** result = matrix_multiply(arr2_1, arr2_2, rows1, cols1, rows2, cols2);
+	if (!result) {
+		std::cout << "Those two matrices are not compatible for multiplication." << std::endl;
+	}
 	Print_2D_Array(result, rows1, cols2);
 
 
