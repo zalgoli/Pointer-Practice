@@ -33,6 +33,12 @@
     <ClCompile Include="FindMinAndMax.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Create_2D_Array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix_Multiplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Swap.h">
@@ -48,6 +54,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FindMinAndMax.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Create_2D_Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix_Multiplication.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -4,6 +4,8 @@
 #include "Reverse_Array.h"
 #include "SumArrayElements.h"
 #include "FindMinAndMax.h"
+#include "Create_2D_Array.h"
+#include "Matrix_Multiplication.h"
 
 int main()
 {
@@ -57,6 +59,54 @@ int main()
 	std::cout << "The minimum in your array is " << *min << " and the maximum is " << *max << std::endl;
 
 	releaseArray(arr);
+
+	// 2D-Arrays
+
+	std::cout << "\n\\\\ USING THE 2D-ARRAY FUNCTIONS // " << std::endl;
+	std::cout << "Now define the number of rows and columns you would like to have for a 2D-Array: " << std::endl;
+	
+	int rows1, cols1;
+	std::cout << "Number of rows: " << std::endl;
+	std::cin >> rows1;
+
+	std::cout << "Number of columns: " << std::endl;
+	std::cin >> cols1;
+
+	int** arr2_1 = Create_2D_Array(rows1, cols1);
+	std::cout << "Now provide " << cols1 *rows1 << " numbers as input for the 2D Array: " << std::endl;
+	Fill_2D_Array(arr2_1, rows1, cols1);
+
+	std::cout << "See your 2D Array below: " << std::endl;
+	Print_2D_Array(arr2_1, rows1, cols1);
+
+	std::cout << "Now define the number of rows and columns you would like to have for a 2D-Array: " << std::endl;
+
+	int rows2, cols2;
+	std::cout << "Number of rows: " << std::endl;
+	std::cin >> rows2;
+
+	std::cout << "Number of columns: " << std::endl;
+	std::cin >> cols2;
+
+	int** arr2_2 = Create_2D_Array(rows2, cols2);
+	std::cout << "Now provide " << cols2 * rows2 << " numbers as input for the 2D Array: " << std::endl;
+	Fill_2D_Array(arr2_2, rows2, cols2);
+
+	std::cout << "See your 2D Array below: " << std::endl;
+	Print_2D_Array(arr2_2, rows2, cols2);
+
+	std::cout << "Finally, here is the result of multiplying these 2 matrices together: " << std::endl;
+	int** result = matrix_multiply(arr2_1, arr2_2, rows1, cols1, rows2, cols2);
+	Print_2D_Array(result, rows1, cols2);
+
+
+	// Releasing 2D Arrays from memory
+	Release_2D_Array(result, rows1);
+	Release_2D_Array(arr2_1, rows1);
+	Release_2D_Array(arr2_2, rows2);
+
+
+
 
 	return 0;
 }

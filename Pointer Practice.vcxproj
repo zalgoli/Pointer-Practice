@@ -139,16 +139,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Create_2D_Array.cpp" />
     <ClCompile Include="Array.cpp" />
     <ClCompile Include="FindMinAndMax.cpp" />
+    <ClCompile Include="Matrix_Multiplication.cpp" />
     <ClCompile Include="Pointer Practice.cpp" />
     <ClCompile Include="Reverse_Array.cpp" />
     <ClCompile Include="SumArrayElements.cpp" />
     <ClCompile Include="Swap.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Create_2D_Array.h" />
     <ClInclude Include="Array.h" />
     <ClInclude Include="FindMinAndMax.h" />
+    <ClInclude Include="Matrix_Multiplication.h" />
     <ClInclude Include="Reverse_Array.h" />
     <ClInclude Include="SumArrayElements.h" />
     <ClInclude Include="Swap.h" />
